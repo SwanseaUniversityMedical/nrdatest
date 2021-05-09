@@ -189,13 +189,12 @@ master:
   ##
   readinessProbe:
     enabled: true
-    initialDelaySeconds: 5
+    initialDelaySeconds: 15
     periodSeconds: 5
     timeoutSeconds: 1
     successThreshold: 1
     failureThreshold: 5
- replica
- ## @param master.customLivenessProbe Custom livenessProbe that overrides the default one
+  ## @param master.customLivenessProbe Custom livenessProbe that overrides the default one
   ##
   customLivenessProbe: {}
   ## @param master.customReadinessProbe Custom readinessProbe that overrides the default one
